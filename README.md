@@ -10,3 +10,9 @@ I am playing around with 'Parser Expression Language' to parse programming files
 No doubt you've asked yourself the question "what if there was an Irish slang programming language syntax? what would it look like", well slacken your jaw and stop asking questions because here you go, something nobody ever wanted or needed, I present to you CulchieScript:
 
 ![CulchieScript](docs/syntax-highlight.png)
+
+## Unicode
+
+Unicode is difficult because reasons.
+
+![Po Tay Toe](docs/unicode-test.png)

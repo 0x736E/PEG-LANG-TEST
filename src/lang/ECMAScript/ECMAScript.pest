@@ -86,11 +86,11 @@ var_keywords = _{ "var" | "let" }
 VARIABLES = {
     var_keywords
     ~
-    WS*
+    WS+
     ~
     var_name_format
     ~
-    WS*
+    WS+
     ~
     "="
     ~
@@ -154,6 +154,10 @@ EXPRESSION = {
     )+
     ~
     WS*
+    ~
+    (
+        ";"
+    )*
 }
 
 func_declaration = {
@@ -200,6 +204,8 @@ FLOW_CONTROL = {
 
 SCRIPT = {(
 	WHITE_SPACE |
+    VARIABLES |
     COMMENT |
-    FUNCTION
+    FUNCTION |
+    FLOW_CONTROL
 )*}
